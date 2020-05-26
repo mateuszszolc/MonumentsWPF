@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="CanMinimize"
+        Loaded="Window_Loaded">
+
+    <Grid x:Name="MainGrid" Background="Khaki">
+        <Label x:Name="Title" Content="SZUKAJ ZABYTKÓW" HorizontalAlignment="Center" Margin="36,6,0,0" VerticalAlignment="Top" Height="56" FontSize="26"/>
+        <Label x:Name="Countries" Content="Wybierz kraj:" HorizontalAlignment="Center" Margin="40,58,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="Cities" Content="Wybierz miasto:" HorizontalAlignment="Center" Margin="40,129,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="Monuments" Content="Wybierz zabytek" HorizontalAlignment="Center" Margin="40,200,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="CountryComboBox"   HorizontalAlignment="Center" Margin="42,88,0,0" VerticalAlignment="Top" Width="176" FontSize="14" SelectionChanged="CountryComboBox_SelectionChanged"/>
+        <ComboBox x:Name="CityComboBox" IsEnabled="False" HorizontalAlignment="Center" Margin="42,160,0,0" VerticalAlignment="Top" Width="176" FontSize="14" SelectionChanged="CityComboBox_SelectionChanged"/>
+        <ComboBox x:Name="MonumentComboBox"  IsEnabled="False"  HorizontalAlignment="Center" Margin="42,231,0,0" VerticalAlignment="Top" Width="176" FontSize="14" SelectionChanged="MonumentComboBox_SelectionChanged"/>
+        <Button x:Name="Show" Content="Pokaż" HorizontalAlignment="Center" Margin="42,284,0,0" VerticalAlignment="Top" Width="115" Height="42" FontSize="20" Click="Show_Click"/>
+        <Button x:Name="Add" Content="Dodaj" HorizontalAlignment="Center" Margin="42,353,0,0" VerticalAlignment="Top" Width="114" Height="42" FontSize="20" Click="Button_Click"/>
+        
+    </Grid>
+</Window>
